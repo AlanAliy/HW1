@@ -36,9 +36,6 @@ class ULListStr {
       return (last >= ARRSIZE);
     }
     
-    bool no_space_first() {
-      return (first == 0);
-    }
   };
 
   /**
@@ -82,13 +79,13 @@ class ULListStr {
    * allocate a new head node.
    *   - MUST RUN in O(1)
    */
-  //void push_front(const std::string& val);
+  void push_front(const std::string& val);
 
   /**
    * Removes a value from the front of the list
    *   - MUST RUN in O(1)
    */
-  //void pop_front();
+  void pop_front();
   
   /**
    * Returns a const reference to the back element
